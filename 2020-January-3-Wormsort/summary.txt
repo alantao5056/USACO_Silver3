@@ -1,0 +1,6 @@
+This problem might seem insanely hard at first, but after knowing to do binary search, we can make 
+this problem much simpler. We can binary search the minimum width of the wormholes, and then seeing 
+if the cows would sort themselves. To do that, we need to dfs the wormholes having more than or equal 
+to the minimum width, and figure out if they are connected so that the cows can go where they need to 
+be. (reminder: the usaco grading site might be unstable, and mark a few cases to be time out, but 
+actually, submitting it several times it might not be time out again)

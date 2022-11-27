@@ -1,0 +1,8 @@
+In this problem, it's obvious to use binary search to search for x. But it is not obvious that you 
+still will get a time out even though you used binary search. The reason is that 10^12 is too large, 
+and simulating the payment would take too long. However, simplifying it to chunks of the same payment 
+every time would fix it. It would just require a little math. When I was writing the code for the 
+payment, I got really confused and my code got complicated. For this problem, the code for the payment 
+would be obvious if you gave yourself some examples, like N=1400, K=1400, M=1, and x=500. Through this,
+we can see that for the first N % x = 1400 % 500 = 400 dollars, it would be subtracting 
+N/x = 1400/500 = 2, each time. Making simple examples would help you get the correct logic for the code. 
